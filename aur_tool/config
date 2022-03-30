@@ -1,0 +1,9 @@
+#!/bin/bash
+# This file will be sourced by the scripts automatically
+PKGEXT=".pkg.tar.xz"
+COMPRESSXZ=(xz -c -z - --threads=0)
+PACKAGER="Killer-Hacker-Oficial <Telegram: @Killer_Hacker_Oficial>"
+GPGKEY="C8454045DA87F259D9D84D58BBD2787BEF5F46ED"
+
+REPONAME="ctlos_dev"
+REMOTE="killer-hacker@storage.osdn.net:/storage/groups/k/ki/killer-os/" # supports ssh config aliases
