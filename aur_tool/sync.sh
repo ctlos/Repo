@@ -4,4 +4,4 @@ DIR="$(cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 source "$DIR/config"
 set -e
 
-rsync --copy-links --delete -avr "$DIR/repository/" "$REMOTE"
+rsync --copy-links --delete -avr "$DIR/../ctlos_dev" -avr "$DIR/../ctlos_repo" "$REMOTE"
