@@ -2,6 +2,3 @@
 
 cache/*
 !cache/.gitkeep
-
-repository/*
-!repository/.gitkeep
