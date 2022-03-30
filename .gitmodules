@@ -1,0 +1,3 @@
+[submodule "/home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/clipit"]
+	path = /home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/clipit
+	url = https://aur.archlinux.org/clipit.git
