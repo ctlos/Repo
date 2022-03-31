@@ -1,0 +1,171 @@
+[submodule "/home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/adwaita-qt"]
+	path = /home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/adwaita-qt
+	url = https://aur.archlinux.org/adwaita-qt.git
+[submodule "/home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/alttab-git"]
+	path = /home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/alttab-git
+	url = https://aur.archlinux.org/alttab-git.git
+[submodule "/home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/archlinux-appstream-data-pamac"]
+	path = /home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/archlinux-appstream-data-pamac
+	url = https://aur.archlinux.org/archlinux-appstream-data-pamac.git
+[submodule "/home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/auto-cpufreq"]
+	path = /home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/auto-cpufreq
+	url = https://aur.archlinux.org/auto-cpufreq.git
+[submodule "/home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/azpainter"]
+	path = /home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/azpainter
+	url = https://aur.archlinux.org/azpainter.git
+[submodule "/home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/betterlockscreen"]
+	path = /home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/betterlockscreen
+	url = https://aur.archlinux.org/betterlockscreen.git
+[submodule "/home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/brainfuck-psiphon-pro-go-bin"]
+	path = /home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/brainfuck-psiphon-pro-go-bin
+	url = https://aur.archlinux.org/brainfuck-psiphon-pro-go-bin.git
+[submodule "/home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/caffeine-ng"]
+	path = /home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/caffeine-ng
+	url = https://aur.archlinux.org/caffeine-ng.git
+[submodule "/home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/chrome-gnome-shell"]
+	path = /home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/chrome-gnome-shell
+	url = https://aur.archlinux.org/chrome-gnome-shell.git
+[submodule "/home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/ckbcomp"]
+	path = /home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/ckbcomp
+	url = https://aur.archlinux.org/ckbcomp.git
+[submodule "/home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/clean-chroot-manager"]
+	path = /home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/clean-chroot-manager
+	url = https://aur.archlinux.org/clean-chroot-manager.git
+[submodule "/home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/clipit"]
+	path = /home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/clipit
+	url = https://aur.archlinux.org/clipit.git
+[submodule "/home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/colorpicker"]
+	path = /home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/colorpicker
+	url = https://aur.archlinux.org/colorpicker.git
+[submodule "/home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/downgrade"]
+	path = /home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/downgrade
+	url = https://aur.archlinux.org/downgrade.git
+[submodule "/home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/firefox-extension-gnome-shell-integration"]
+	path = /home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/firefox-extension-gnome-shell-integration
+	url = https://aur.archlinux.org/firefox-extension-gnome-shell-integration.git
+[submodule "/home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/fzf-extras"]
+	path = /home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/fzf-extras
+	url = https://aur.archlinux.org/fzf-extras.git
+[submodule "/home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/gnome-shell-extension-just-perfection-desktop-git"]
+	path = /home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/gnome-shell-extension-just-perfection-desktop-git
+	url = https://aur.archlinux.org/gnome-shell-extension-just-perfection-desktop-git.git
+[submodule "/home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/gotop-bin"]
+	path = /home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/gotop-bin
+	url = https://aur.archlinux.org/gotop-bin.git
+[submodule "/home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/i3lock-color"]
+	path = /home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/i3lock-color
+	url = https://aur.archlinux.org/i3lock-color.git
+[submodule "/home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/imagewriter"]
+	path = /home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/imagewriter
+	url = https://aur.archlinux.org/imagewriter.git
+[submodule "/home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/inxi"]
+	path = /home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/inxi
+	url = https://aur.archlinux.org/inxi.git
+[submodule "/home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/libpamac-aur"]
+	path = /home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/libpamac-aur
+	url = https://aur.archlinux.org/libpamac-aur.git
+[submodule "/home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/libptytty"]
+	path = /home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/libptytty
+	url = https://aur.archlinux.org/libptytty.git
+[submodule "/home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/mkinitcpio-openswap"]
+	path = /home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/mkinitcpio-openswap
+	url = https://aur.archlinux.org/mkinitcpio-openswap.git
+[submodule "/home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/multilockscreen-git"]
+	path = /home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/multilockscreen-git
+	url = https://aur.archlinux.org/multilockscreen-git.git
+[submodule "/home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/nerd-fonts-hack"]
+	path = /home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/nerd-fonts-hack
+	url = https://aur.archlinux.org/nerd-fonts-hack.git
+[submodule "/home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/netwmpager"]
+	path = /home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/netwmpager
+	url = https://aur.archlinux.org/netwmpager.git
+[submodule "/home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/nohang-git"]
+	path = /home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/nohang-git
+	url = https://aur.archlinux.org/nohang-git.git
+[submodule "/home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/ob-yml-menu"]
+	path = /home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/ob-yml-menu
+	url = https://aur.archlinux.org/ob-yml-menu.git
+[submodule "/home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/obkey-git"]
+	path = /home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/obkey-git
+	url = https://aur.archlinux.org/obkey-git.git
+[submodule "/home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/oblogout-py3-git"]
+	path = /home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/oblogout-py3-git
+	url = https://aur.archlinux.org/oblogout-py3-git.git
+[submodule "/home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/oh-my-zsh-git"]
+	path = /home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/oh-my-zsh-git
+	url = https://aur.archlinux.org/oh-my-zsh-git.git
+[submodule "/home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/otb-uw_ttyp0"]
+	path = /home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/otb-uw_ttyp0
+	url = https://aur.archlinux.org/otb-uw_ttyp0.git
+[submodule "/home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/pamac-aur"]
+	path = /home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/pamac-aur
+	url = https://aur.archlinux.org/pamac-aur.git
+[submodule "/home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/pfetch"]
+	path = /home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/pfetch
+	url = https://aur.archlinux.org/pfetch.git
+[submodule "/home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/pipe-viewer-git"]
+	path = /home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/pipe-viewer-git
+	url = https://aur.archlinux.org/pipe-viewer-git.git
+[submodule "/home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/polybar"]
+	path = /home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/polybar
+	url = https://aur.archlinux.org/polybar.git
+[submodule "/home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/polybar-git"]
+	path = /home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/polybar-git
+	url = https://aur.archlinux.org/polybar-git.git
+[submodule "/home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/python-pulsectl"]
+	path = /home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/python-pulsectl
+	url = https://aur.archlinux.org/python-pulsectl.git
+[submodule "/home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/qgnomeplatform"]
+	path = /home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/qgnomeplatform
+	url = https://aur.archlinux.org/qgnomeplatform.git
+[submodule "/home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/qmplay2"]
+	path = /home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/qmplay2
+	url = https://aur.archlinux.org/qmplay2.git
+[submodule "/home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/qogir-icon-theme"]
+	path = /home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/qogir-icon-theme
+	url = https://aur.archlinux.org/qogir-icon-theme.git
+[submodule "/home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/qt5-styleplugins"]
+	path = /home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/qt5-styleplugins
+	url = https://aur.archlinux.org/qt5-styleplugins.git
+[submodule "/home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/redsocks"]
+	path = /home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/redsocks
+	url = https://aur.archlinux.org/redsocks.git
+[submodule "/home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/rofi-greenclip"]
+	path = /home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/rofi-greenclip
+	url = https://aur.archlinux.org/rofi-greenclip.git
+[submodule "/home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/rxvt-unicode-pixbuf"]
+	path = /home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/rxvt-unicode-pixbuf
+	url = https://aur.archlinux.org/rxvt-unicode-pixbuf.git
+[submodule "/home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/skippy-xd-git"]
+	path = /home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/skippy-xd-git
+	url = https://aur.archlinux.org/skippy-xd-git.git
+[submodule "/home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/timeshift"]
+	path = /home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/timeshift
+	url = https://aur.archlinux.org/timeshift.git
+[submodule "/home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/tint2-git"]
+	path = /home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/tint2-git
+	url = https://aur.archlinux.org/tint2-git.git
+[submodule "/home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/torrserver-bin"]
+	path = /home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/torrserver-bin
+	url = https://aur.archlinux.org/torrserver-bin.git
+[submodule "/home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/ttf-clear-sans"]
+	path = /home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/ttf-clear-sans
+	url = https://aur.archlinux.org/ttf-clear-sans.git
+[submodule "/home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/ventoy-bin"]
+	path = /home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/ventoy-bin
+	url = https://aur.archlinux.org/ventoy-bin.git
+[submodule "/home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/woeusb-ng"]
+	path = /home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/woeusb-ng
+	url = https://aur.archlinux.org/woeusb-ng.git
+[submodule "/home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/yay-bin"]
+	path = /home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/yay-bin
+	url = https://aur.archlinux.org/yay-bin.git
+[submodule "/home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/yq2-bin"]
+	path = /home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/yq2-bin
+	url = https://aur.archlinux.org/yq2-bin.git
+[submodule "/home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/ytfzf"]
+	path = /home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/ytfzf
+	url = https://aur.archlinux.org/ytfzf.git
+[submodule "/home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/zsh-fast-syntax-highlighting-git"]
+	path = /home/killer/Documentos/Projectos/CTLOS/Repo/aur_tool/pkgbuild/zsh-fast-syntax-highlighting-git
+	url = https://aur.archlinux.org/zsh-fast-syntax-highlighting-git.git
