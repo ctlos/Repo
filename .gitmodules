@@ -1,3 +1,4 @@
+
 [submodule "pkgbuild/yay-bin"]
 	path = pkgbuild/yay-bin
 	url = https://aur.archlinux.org/yay-bin
