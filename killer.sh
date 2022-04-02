@@ -26,12 +26,22 @@ usage() {
 
 # Agregar PKGBUILD
 add() {
-	echo -e "Add" ;
+	
+	cd $DIR
+
+	git submodule add --force https://aur.archlinux.org/"$pkg" ./pkgbuild/"$pkg"
 }
 
 # Eliminar PKGBUILD
 delete() {
-	echo -e "Delete" ;
+	pushd "$DIR" || exit
+        git rm --cached "$DIR/pkgbuild/${OPTARG}"
+        rm -rf "$DIR/pkgbuild/${OPTARG}"
+        # git commit -m "Removed ${OPTARG} submodule"
+        rm -rf "$DIR/.git/modules/pkgbuild/${OPTARG}"
+        git config -f .gitmodules --remove-section "submodule.pkgbuild/${OPTARG}"
+        git config -f .git/config --remove-section "submodule.pkgbuild/${OPTARG}"
+    popd || exit
 }
 
 # Compilar o Generar PKG

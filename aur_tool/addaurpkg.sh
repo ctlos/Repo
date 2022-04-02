@@ -1,6 +1,0 @@
-#!/bin/bash
-DIR="$(cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
-
-cd $DIR
-
-git submodule add "https://aur.archlinux.org/$1" "$DIR/pkgbuild/$1"
