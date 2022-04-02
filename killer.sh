@@ -50,7 +50,22 @@ delete() {
 
 # Compilar o Generar PKG
 build() {
-	echo -e "Build" ;
+	git submodule update --recursive --remote
+
+	pushd "$DIR/pkgbuild"
+	for f in *; do
+	    if [ -d "$f" ]; then
+	        echo "Processing $f..."
+	        pushd "$f"
+	        if [ -f "PKGBUILD" ]; then
+	            echo "Found PKGBUILD for $f. Building..."
+	            # clean build force overwrite and sign
+	            makepkg -c -C -s -f --sign --noconfirm --needed -r --skippgpcheck --skipint
+	        fi
+	        popd
+	    fi
+	done
+
 }
 
 # Actualizar PKGBUILD
