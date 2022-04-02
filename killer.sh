@@ -29,7 +29,7 @@ add() {
 	pushd "$DIR" || exit
 		git submodule add --force https://aur.archlinux.org/"$pkg" ./pkgbuild/"$pkg"
 		git add .
-        git commit -m "ADD $pkg Submodule"
+        git commit -m "Add $pkg Submodule"
         git push origin main
 	popd || exit
 }
