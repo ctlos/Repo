@@ -1,5 +1,6 @@
 #!/bin/bash
 # This file will be sourced by the scripts automatically
+
 PKGEXT=".pkg.tar.xz"
 COMPRESSXZ=(xz -c -z - --threads=0)
 PACKAGER="Killer-Hacker-Oficial <Telegram: @Killer_Hacker_Oficial>"
