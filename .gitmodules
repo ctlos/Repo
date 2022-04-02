@@ -1,6 +1,3 @@
-[submodule "aur_tool/pkgbuild/yay"]
-	path = aur_tool/pkgbuild/yay
-	url = https://aur.archlinux.org/yay
 [submodule "aur_tool/pkgbuild/yay-bin"]
 	path = aur_tool/pkgbuild/yay-bin
 	url = https://aur.archlinux.org/yay-bin
