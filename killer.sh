@@ -24,15 +24,17 @@ usage() {
     echo -e "Menu de Ayuda" ;
 }
 
-# Agregar PKGBUILD
+# Agregar PKGBUILD y Actualizar Repo de GitHub
 add() {
-	
-	cd $DIR
-
-	git submodule add --force https://aur.archlinux.org/"$pkg" ./pkgbuild/"$pkg"
+	pushd "$DIR" || exit
+		git submodule add --force https://aur.archlinux.org/"$pkg" ./pkgbuild/"$pkg"
+		git add .
+        git commit -m "ADD $pkg Submodule"
+        git push origin main
+	popd || exit
 }
 
-# Eliminar PKGBUILD
+# Eliminar PKGBUILD y Actualizar Repo de GitHub
 delete() {
 	pushd "$DIR" || exit
         git rm --cached "$DIR/pkgbuild/${OPTARG}"
@@ -42,7 +44,7 @@ delete() {
         git config -f .git/config --remove-section "submodule.pkgbuild/${OPTARG}"
         git add .
         git commit -m "Removed ${OPTARG} Submodule"
-        git push origin master
+        git push origin main
     popd || exit
 }
 
