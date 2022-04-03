@@ -27,11 +27,9 @@ usage() {
 # Agregar PKGBUILD y Actualizar Repo de GitHub
 add() {
 	pushd "$DIR" || exit
-		# git submodule add --force https://aur.archlinux.org/"$pkg" ./pkgbuild/"$pkg"
-		git clone https://aur.archlinux.org/"$pkg" ./pkgbuild/"$pkg"
-        git rm --cached ./pkgbuild/"$pkg"
-        git add .
-        git commit -m "Add $pkg"
+		git submodule add --force https://aur.archlinux.org/"$pkg" ./pkgbuild/"$pkg"
+        # git add .
+        # git commit -m "Add $pkg"
         # git push origin main
 	popd || exit
 }
@@ -39,13 +37,13 @@ add() {
 # Eliminar PKGBUILD y Actualizar Repo de GitHub
 delete() {
 	pushd "$DIR" || exit
-        # git rm --cached "$DIR/pkgbuild/${OPTARG}"
+        git rm --cached "$DIR/pkgbuild/${OPTARG}"
         rm -rf "$DIR/pkgbuild/${OPTARG}"
-        # rm -rf "$DIR/.git/modules/pkgbuild/${OPTARG}"
-        # git config -f .gitmodules --remove-section "submodule.pkgbuild/${OPTARG}"
-        # git config -f .git/config --remove-section "submodule.pkgbuild/${OPTARG}"
-        git add .
-        git commit -m "Removed ${OPTARG}"
+        rm -rf "$DIR/.git/modules/pkgbuild/${OPTARG}"
+        git config -f .gitmodules --remove-section "submodule.pkgbuild/${OPTARG}"
+        git config -f .git/config --remove-section "submodule.pkgbuild/${OPTARG}"
+        # git add .
+        # git commit -m "Removed ${OPTARG}"
         # git push origin main
     popd || exit
 }
@@ -61,7 +59,7 @@ build() {
 	        pushd "$f"
 	        if [ -f "PKGBUILD" ]; then
 	            echo "Se Encontro el PKGBUILD de $f. Empezando a Compilar..."
-	            # clean build force overwrite and sign
+	            # limpiar construir forzar sobrescribir y firmar
 	            makepkg -C -s -f --sign --noconfirm
 	        fi
 	        popd
