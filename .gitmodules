@@ -4,9 +4,6 @@
 [submodule "pkgbuild/yay-bin"]
 	path = pkgbuild/yay-bin
 	url = https://aur.archlinux.org/yay-bin
-[submodule "pkgbuild/yay"]
-	path = pkgbuild/yay
-	url = https://aur.archlinux.org/yay
 [submodule "pkgbuild/ttf-cica"]
 	path = pkgbuild/ttf-cica
 	url = https://aur.archlinux.org/ttf-cica
