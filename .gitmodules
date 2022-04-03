@@ -1,0 +1,3 @@
+[submodule "pkgbuild/ttf-ms-fonts"]
+	path = pkgbuild/ttf-ms-fonts
+	url = https://aur.archlinux.org/ttf-ms-fonts
