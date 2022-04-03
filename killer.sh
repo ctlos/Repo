@@ -29,8 +29,8 @@ add() {
 	pushd "$DIR" || exit
 		# git submodule add --force https://aur.archlinux.org/"$pkg" ./pkgbuild/"$pkg"
 		git clone https://aur.archlinux.org/"$pkg" ./pkgbuild/"$pkg"
-        rm -rf ./pkgbuild/$pkg/.git
-        rm -rf ./pkgbuild/$pkg/.gitignore
+        # rm -rf ./pkgbuild/$pkg/.git
+        # rm -rf ./pkgbuild/$pkg/.gitignore
         # git add .
         # git commit -m "Add $pkg Submodule"
         # git push origin main
