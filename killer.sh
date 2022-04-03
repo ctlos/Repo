@@ -88,7 +88,7 @@ sync() {
 while getopts "ad:rbh:" arg; do
     case $arg in
         a) shift $(( OPTIND - 1 )); for pkg in "$@"; do add; done ;;
-        b) build; deploy; sync; grep -rnw 'pkgbuild/' -e 'Tiempo de ejecución total'; exit 0 ;;
+        b) build; deploy; sync; exit 0 ;;
         r) refresh ;;
         d) delete ;;
         h) usage ;;
