@@ -117,12 +117,11 @@ deploy() {
 # Actualizar Repositorio
 sync() {
     # Killer-Hacker-Oficial
-    rsync --copy-links --delete -avr "$DIR/ctlos_dev" "$KILLER"
-    rsync --copy-links --delete -avr "$DIR/ctlos_repo" "$KILLER"
+    rsync --copy-links --delete -avr "$DIR/ctlos_dev" -avr "$DIR/ctlos_repo" "$KILLER"
 
     # CTLOS Linux
-    # rsync --copy-links --delete -avr "$DIR/ctlos_dev" "$CTLOS"
-    # rsync --copy-links --delete -avr "$DIR/ctlos_repo" "$CTLOS"
+    rsync --copy-links --delete -avr "$DIR/ctlos_dev" -avr "$DIR/ctlos_repo" "$CTLOS"
+
     rm -rfv "$DIR"/cache/*
 }
 
