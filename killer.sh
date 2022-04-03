@@ -58,7 +58,7 @@ build() {
 	        echo "Prosesando $f..."
 	        pushd "$f"
 	        if [ -f "PKGBUILD" ]; then
-	            echo "Se Encontro PKGBUILD de $f. Empezando a Compilar..."
+	            echo "Se Encontro el PKGBUILD de $f. Empezando a Compilar..."
 	            # clean build force overwrite and sign
 	            makepkg -C -s -f --sign --noconfirm
 	        fi
@@ -70,7 +70,26 @@ build() {
 
 # Actualizar PKGBUILD
 refresh() {
-	echo -e "Refresh" ;
+    pushd "$DIR/pkgbuild" > /dev/null 2>&1 || exit
+    echo -e "\n\e[1;33mActualizando todos los submódulos...\e[0m"
+    
+    # Actualizar todos los submódulos
+    for D in */; do
+        cd "$D" || exit;
+        echo -e "\n\e[1;34mActualizando $D\e[0m"
+        # Limpiar los cambios no deseados realizados en los submódulos localmente
+        git clean -x -d -f -q
+        git stash --quiet 
+
+        # Rebase
+        git rebase HEAD master
+
+        # Actualizar submódulos
+        git pull origin master
+        cd ..;
+    sleep 0.25s;
+    done
+    popd > /dev/null 2>&1 || exit
 }
 
 # Crear Repositorio
@@ -85,13 +104,12 @@ sync() {
 
 # Opciones
 [ $# -eq 0 ] && usage
-while getopts "ad:rbh:" arg; do
+while getopts "ad:rb:" arg; do
     case $arg in
         a) shift $(( OPTIND - 1 )); for pkg in "$@"; do add; done ;;
         b) build; deploy; sync; exit 0 ;;
         r) refresh ;;
         d) delete ;;
-        h) usage ;;
         *) usage ;;
     esac
 done
