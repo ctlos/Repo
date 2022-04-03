@@ -123,6 +123,7 @@ sync() {
     # CTLOS Linux
     # rsync --copy-links --delete -avr "$DIR/ctlos_dev" "$CTLOS"
     # rsync --copy-links --delete -avr "$DIR/ctlos_repo" "$CTLOS"
+    rm -rfv "$DIR"/cache/*
 }
 
 # Opciones
