@@ -58,7 +58,7 @@ build() {
 	        echo "Prosesando $f..."
 	        pushd "$f"
 	        if [ -f "PKGBUILD" ]; then
-	            echo "Found PKGBUILD for $f. Building..."
+	            echo "Se Encontro PKGBUILD de $f. Empezando a Compilar..."
 	            # clean build force overwrite and sign
 	            makepkg -C -s -f --sign --noconfirm
 	        fi
