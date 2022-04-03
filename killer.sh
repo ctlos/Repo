@@ -104,12 +104,13 @@ sync() {
 
 # Opciones
 [ $# -eq 0 ] && usage
-while getopts "ad:rb:" arg; do
+while getopts "ad:rbh:" arg; do
     case $arg in
         a) shift $(( OPTIND - 1 )); for pkg in "$@"; do add; done ;;
         b) build; deploy; sync; exit 0 ;;
         r) refresh ;;
         d) delete ;;
+        h) usage ;;
         *) usage ;;
     esac
 done
