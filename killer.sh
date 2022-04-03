@@ -30,7 +30,7 @@ add() {
 		git submodule add --force https://aur.archlinux.org/"$pkg" ./pkgbuild/"$pkg"
 		git add .
         git commit -m "Add $pkg Submodule"
-        git push origin main
+        # git push origin main
 	popd || exit
 }
 
@@ -44,7 +44,7 @@ delete() {
         git config -f .git/config --remove-section "submodule.pkgbuild/${OPTARG}"
         git add .
         git commit -m "Removed ${OPTARG} Submodule"
-        git push origin main
+        # git push origin main
     popd || exit
 }
 
@@ -94,12 +94,35 @@ refresh() {
 
 # Crear Repositorio
 deploy() {
-	echo -e "Deploy" ;
+    # Mover paquetes construidos en caché/
+    pushd "$DIR/ctlos_dev/x86_64"
+    for f in *${PKGEXT}; do > /dev/null 2>&1 || exit
+        [ -f "$f" ] || break
+        echo "Archivando $f..."
+        mv "$f" "$BUILDDIR"
+        mv "${f}.sig" "$BUILDDIR"
+    done
+
+    # Agregar paquetes construidos a la base de datos del repositorio
+    for f in ${PKGDEST}/*${PKGEXT}; do
+        [ -f "$f" ] || break
+        echo "Desplegando $f..."
+        mv "$f" "./"
+        mv "${f}.sig" "./"
+        repo-add -R -s -v "${REPONAME}.db.tar.gz" "$(basename "$f")"
+    done || exit
+    popd
 }
 
 # Actualizar Repositorio
 sync() {
-	echo -e "Sync" ;
+    # Killer-Hacker-Oficial
+    rsync --copy-links --delete -avr "$DIR/ctlos_dev" "$KILLER"
+    rsync --copy-links --delete -avr "$DIR/ctlos_repo" "$KILLER"
+
+    # CTLOS Linux
+    # rsync --copy-links --delete -avr "$DIR/ctlos_dev" "$CTLOS"
+    # rsync --copy-links --delete -avr "$DIR/ctlos_repo" "$CTLOS"
 }
 
 # Opciones
