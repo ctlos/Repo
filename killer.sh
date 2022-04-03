@@ -27,8 +27,9 @@ usage() {
 # Agregar PKGBUILD y Actualizar Repo de GitHub
 add() {
 	pushd "$DIR" || exit
-		git submodule add --force https://aur.archlinux.org/"$pkg" ./pkgbuild/"$pkg"
-		git add .
+		# git submodule add --force https://aur.archlinux.org/"$pkg" ./pkgbuild/"$pkg"
+		git clone https://aur.archlinux.org/"$pkg" ./pkgbuild/"$pkg"
+        git add .
         git commit -m "Add $pkg Submodule"
         # git push origin main
 	popd || exit
