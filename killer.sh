@@ -29,6 +29,7 @@ add() {
 	pushd "$DIR" || exit
 		# git submodule add --force https://aur.archlinux.org/"$pkg" ./pkgbuild/"$pkg"
 		git clone https://aur.archlinux.org/"$pkg" ./pkgbuild/"$pkg"
+        git rm --cached ./pkgbuild/"$pkg"
         git add .
         git commit -m "Add $pkg"
         # git push origin main
@@ -130,8 +131,8 @@ sync() {
 [ $# -eq 0 ] && usage
 while getopts "ad:rbh:" arg; do
     case $arg in
-        a) shift $(( OPTIND - 1 )); for pkg in "$@"; do add; done; git push origin main ;;
-        b) build; deploy; sync; git push origin main; exit 0 ;;
+        a) shift $(( OPTIND - 1 )); for pkg in "$@"; do add; done ;;
+        b) build; deploy; sync; exit 0 ;;
         r) refresh ;;
         d) delete ;;
         h) usage ;;
