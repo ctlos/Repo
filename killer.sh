@@ -29,10 +29,8 @@ add() {
 	pushd "$DIR" || exit
 		# git submodule add --force https://aur.archlinux.org/"$pkg" ./pkgbuild/"$pkg"
 		git clone https://aur.archlinux.org/"$pkg" ./pkgbuild/"$pkg"
-        # rm -rf ./pkgbuild/$pkg/.git
-        # rm -rf ./pkgbuild/$pkg/.gitignore
-        # git add .
-        # git commit -m "Add $pkg Submodule"
+        git add .
+        git commit -m "Add $pkg"
         # git push origin main
 	popd || exit
 }
@@ -42,11 +40,11 @@ delete() {
 	pushd "$DIR" || exit
         # git rm --cached "$DIR/pkgbuild/${OPTARG}"
         rm -rf "$DIR/pkgbuild/${OPTARG}"
-        rm -rf "$DIR/.git/modules/pkgbuild/${OPTARG}"
+        # rm -rf "$DIR/.git/modules/pkgbuild/${OPTARG}"
         # git config -f .gitmodules --remove-section "submodule.pkgbuild/${OPTARG}"
         # git config -f .git/config --remove-section "submodule.pkgbuild/${OPTARG}"
         git add .
-        git commit -m "Removed ${OPTARG} Submodule"
+        git commit -m "Removed ${OPTARG}"
         # git push origin main
     popd || exit
 }
@@ -132,8 +130,8 @@ sync() {
 [ $# -eq 0 ] && usage
 while getopts "ad:rbh:" arg; do
     case $arg in
-        a) shift $(( OPTIND - 1 )); for pkg in "$@"; do add; done ;;
-        b) build; deploy; sync; exit 0 ;;
+        a) shift $(( OPTIND - 1 )); for pkg in "$@"; do add; done; git push origin main ;;
+        b) build; deploy; sync; git push origin main; exit 0 ;;
         r) refresh ;;
         d) delete ;;
         h) usage ;;
