@@ -1,1 +1,1 @@
-ctlos_dev.files.tar.gz.sig
+ctlos_dev.files.tar.zst.sig

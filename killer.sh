@@ -109,7 +109,7 @@ deploy() {
         echo "Desplegando $f..."
         mv "$f" "./"
         mv "${f}.sig" "./"
-        repo-add -R -s -v "${REPONAME}.db.tar.gz" "$(basename "$f")"
+        repo-add -R -s -v "${REPONAME}.db.tar.zst" "$(basename "$f")"
     done || exit
     popd
 }
@@ -117,10 +117,10 @@ deploy() {
 # Actualizar Repositorio
 sync() {
     # Killer-Hacker-Oficial
-    rsync --copy-links --delete -avr "$DIR/ctlos_dev" -avr "$DIR/ctlos_repo" "$KILLER"
+    # rsync --copy-links --delete -avr "$DIR/ctlos_dev" -avr "$DIR/ctlos_repo" "$KILLER"
 
     # CTLOS Linux
-    rsync --copy-links --delete -avr "$DIR/ctlos_dev" -avr "$DIR/ctlos_repo" "$CTLOS"
+    rsync --copy-links --delete -avr "$DIR/ctlos_dev" "$CTLOS"
 
     rm -rfv "$DIR"/cache/*
 }

@@ -1,0 +1,3 @@
+[submodule "pkgbuild/gotop-bin"]
+	path = pkgbuild/gotop-bin
+	url = https://aur.archlinux.org/gotop-bin
